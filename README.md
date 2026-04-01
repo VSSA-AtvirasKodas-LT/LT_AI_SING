@@ -56,7 +56,7 @@ Demonstracijai sukurti modeliai dviem balsams: vyriškam ir moteriškam. Jie pat
 
 Pavyzdinis sintezavimo Jupyter failas: [notebooks/tts_demo.ipynb](notebooks/tts_demo.ipynb).
 
-Demonstracinio failo nuoroda internete: [![Atidaryti Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VSSA-AtvirasKodas-LT/LT_AI_SING/main/notebooks/tts_demo.ipynb)
+Demonstracinio failo nuoroda internete: [![Atidaryti Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VSSA-AtvirasKodas-LT/LT_AI_SING/blob/main/notebooks/tts_demo.ipynb)
 
 
 #### Lokalioje mašinoje
