@@ -16,13 +16,13 @@
  
 ## Apie
 
-LT_AI_SING repozitorija skirta pademonstruoti, kaip Sintezės Garsyno (SING) balsai gali būti naudojami lietuvių kalbos sintezei.
+LT_AI_SING repozitorija skirta pademonstruoti, kaip Sintezės Garsyno (SING) balso įrašai gali būti naudojami lietuvių kalbos sintezei.
 
 ## Garsynas
 
 Pilnas garsyno aprašymas: *TDB nuoroda...*
 
-Garsyną sudaro 20 balsų. Bendra garsyno apimtis yra 180 val. *TDB...*
+Garsyną sudaro 20 balsų. Bendra garsyno apimtis yra 200 val. *TDB...*
 
 Garsyno parsisiuntimo nuoroda: *TDB...*
 
@@ -41,6 +41,8 @@ Demonstracijai sukurti modeliai dviem balsams: vyriškam ir moteriškam. Jie pat
 
 ### Paruošti modeliai 
 
+Šnekamosios kalbos sintezatoriaus sprendimas vienam balsui sintezuoti naudoja du išmoktus modelius: akustinį modelį ir vokoderį.
+
 #### Vyriškas balsas
 
 1. Akustinis modelis: [VSSA-SDSA/sing-arn.fastspeech2.v01](https://huggingface.co/VSSA-SDSA/sing-arn.fastspeech2.v01)
@@ -52,23 +54,25 @@ Demonstracijai sukurti modeliai dviem balsams: vyriškam ir moteriškam. Jie pat
 4. Vokoderis: [VSSA-SDSA/sing-agn.vocoder.style_melgan.v01](https://huggingface.co/VSSA-SDSA/sing-agn.vocoder.style_melgan.v01) 
 
 
-### Demonstracija internete
+### Demonstracinio sintezės sprendimo vartotojo instrukcija
 
-Pavyzdinis sintezavimo Jupyter failas: [notebooks/tts_demo.ipynb](notebooks/tts_demo.ipynb).
+Čia galite rasti pažingsninę techninę vartotojo instrukciją (Jupyter failą), kuri demonstruoja kaip šnekos sintezei panaudoti HuggingFace repozitorijoje patalpintus demonstracinius sintezavimo modelius: [notebooks/tts_demo.ipynb](notebooks/tts_demo.ipynb).
 
 Demonstracinio failo nuoroda internete: [![Atidaryti Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VSSA-AtvirasKodas-LT/LT_AI_SING/blob/main/notebooks/tts_demo.ipynb)
 
 
-#### Lokalioje mašinoje
+#### Demonstracinio sintezės sprendimo administratoriaus instrukcija
 
-[Čia](notebooks/tts_demo_local.ipynb) patalpintas Jupyter skriptas, kuris demonstruoja, kaip Python aplinkoje galima sintezuoti lietuvišką šneką. Jums reikia:
+Čia galite rasti pažingsninę techninę administratoriaus [instrukciją](notebooks/tts_demo_local.ipynb) (Jupyter failą), kuris demonstruoja, kaip vietiniame kompiuteryje Python aplinkoje galima sintezuoti lietuvišką šneką. Jums reikia:
 1. Susidiegti [ESPnet paketą](https://github.com/airenas/espnet/blob/master/egs2/sing/tts1/README.lt.md#espnet-diegimas).
 2. Papildomai ESPnet conda aplinkoje įdiekite vokoderio kodą ir Jupyter: `pip install parallel_wavegan jupyter --no-build-isolation`.
 3. Parsisiųskite modelius iš [Paruošti modeliai](#paruošti-modeliai) arba naudokite savo apmokytus. Pvz., modelius parsisiųsti galima su `git` komanda (reikia papildomai įsidiegti `git-lfs`): `git clone https://huggingface.co/VSSA-SDSA/sing-agn.fastspeech2.v01`
 4. Paleiskite Jupyter Notebook ir naršyklėje atsidarykite failą [notebooks/tts_demo_local.ipynb](notebooks/tts_demo_local.ipynb). Sekite instrukcijas Jupyter faile.
 
 
-### Modelių mokymo skriptai
+### Demonstracinio sintezės sprendimo techninis aprašas, mokymo ir diegimo instrukcijos
+
+Čia galite rasti techninį aprašą ir nuorodas į GitHub repozitorijas, kuriose pateiktos pažingsninės instrukcijos, kaip išmokyti akustinį modelį ir vokoderį, naudojantis SING garsyno diktorių balso duomenimis:
 
 - Akustinio modelio mokymo skriptai ir instrukcija: [ESPnet](https://github.com/airenas/espnet/blob/master/egs2/sing/tts1/README.lt.md).
 - Vokoderio mokymo skriptai ir instrukcija: [ParallelWaveGAN](https://github.com/airenas/ParallelWaveGAN/blob/master/egs/sing/voc1/README.lt.md).
