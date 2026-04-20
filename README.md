@@ -10,9 +10,9 @@
     - [Paruošti modeliai](#paruošti-modeliai)
       - [Vyriškas balsas](#vyriškas-balsas)
       - [Moteriškas balsas](#moteriškas-balsas)
-    - [Demonstracija internete](#demonstracija-internete)
-      - [Lokalioje mašinoje](#lokalioje-mašinoje)
-    - [Modelių mokymo skriptai](#modelių-mokymo-skriptai)
+    - [Vartotojo instrukcija](#demonstracinio-sintezės-sprendimo-vartotojo-instrukcija)
+    - [Administratoriaus instrukcija](#demonstracinio-sintezės-sprendimo-administratoriaus-instrukcija)
+    - [Mokymo ir diegimo instrukcija](#demonstracinio-sintezės-sprendimo-techninis-aprašas-mokymo-ir-diegimo-instrukcijos)
  
 ## Apie
 
@@ -20,11 +20,9 @@ LT_AI_SING repozitorija skirta pademonstruoti, kaip Sintezės Garsyno (SING) bal
 
 ## Garsynas
 
-Pilnas garsyno aprašymas: *TDB nuoroda...*
+Garsyną galima rasti Clarin duomenų saugykloje: [https://clarin-repo.lt/items/e7333412-cc01-46ce-8a37-f36a5388f3d5](https://clarin-repo.lt/items/e7333412-cc01-46ce-8a37-f36a5388f3d5)
 
-Garsyną sudaro 20 balsų. Bendra garsyno apimtis yra 200 val. *TDB...*
-
-Garsyno parsisiuntimo nuoroda: *TDB...*
+Garsyną sudaro 20 balsų. Bendra garsyno apimtis yra 200 val.
 
 ## Šnekos sintezė
 
@@ -61,7 +59,7 @@ Demonstracijai sukurti modeliai dviem balsams: vyriškam ir moteriškam. Jie pat
 Demonstracinio failo nuoroda internete: [![Atidaryti Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VSSA-AtvirasKodas-LT/LT_AI_SING/blob/main/notebooks/tts_demo.ipynb)
 
 
-#### Demonstracinio sintezės sprendimo administratoriaus instrukcija
+### Demonstracinio sintezės sprendimo administratoriaus instrukcija
 
 Čia galite rasti pažingsninę techninę administratoriaus [instrukciją](notebooks/tts_demo_local.ipynb) (Jupyter failą), kuris demonstruoja, kaip vietiniame kompiuteryje Python aplinkoje galima sintezuoti lietuvišką šneką. Jums reikia:
 1. Susidiegti [ESPnet paketą](https://github.com/airenas/espnet/blob/master/egs2/sing/tts1/README.lt.md#espnet-diegimas).
